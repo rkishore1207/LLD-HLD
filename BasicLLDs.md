@@ -63,3 +63,15 @@
 ![UML Diagram](https://github.com/rkishore1207/LLD-HLD/assets/146698138/49309642-d612-462f-a0e8-6e940ae61911)
 * `Dotted line` is for **Implements**, that is derived class is force to implements the base class's methods.
 * **Association** => Unidirectional and Bidirectional.
+* One box is divided into three parts, **Name -> Data Members -> Methods**
+    - Plus is for Public
+    - Minus is for Private
+    - Hash is for Protected
+    - There also return type for methods, that is after colon
+    - Underline emphasize Static
+## Design Patterns
+* It is a `solution` to a commonly occurs **problem**, and it is like a `template` to lot of problems and these patterns are proved and well tested.
+* Design Patterns approach is completely based upon `Solid Principles`.
+    - Creational DP
+    - Structural DP
+    - Behavioral DP
