@@ -52,6 +52,26 @@
 * In dynamic polymorphism, the behavior of a method is decided at runtime.
 * The Parent Class and the Child class have the same method implementation. So, in this case, we will be able to know at runtime from which class the method is going to be executed.
 
+## SOLID Principles
+
+### Single Responsibility Principle
+* One method is completely responsible for **one purpose** as well as class.
+* But it is `Subjective`, based on the scenario, it will depends on the requirements
+
+### Open Closed Principle
+> Open for Extension and Closed for Modification
+* If we wrote some code, then it would be able to add some other feature at future but we could do any modification on old code.
+
+### Lyskov's Substitution Principle
+* We could not force the child to do the implementation for methods.
+* And we cannot alter the parent's behaviour.
+
+### Interface Seggregation Principle
+* Interface also having only the necessary methods based on the child, not having the unrelevent methods.
+
+### Dependency Inversion Principle
+* High Module not completely based on the low module, it should be communicate through a interface.
+
 ## Has a Relationship (Aggregation and Composition)
 * If a class is completely depends upon it's base class then it is `Composition` **(partOff)**, and if the class still exist, even if the parent dies then it is `Aggregation`. But both will come under **has a**.
 * Eg, Person has a heart and Person has a Book.
@@ -63,3 +83,15 @@
 ![UML Diagram](https://github.com/rkishore1207/LLD-HLD/assets/146698138/49309642-d612-462f-a0e8-6e940ae61911)
 * `Dotted line` is for **Implements**, that is derived class is force to implements the base class's methods.
 * **Association** => Unidirectional and Bidirectional.
+* One box is divided into three parts, **Name -> Data Members -> Methods**
+    - Plus is for Public
+    - Minus is for Private
+    - Hash is for Protected
+    - There also return type for methods, that is after colon
+    - Underline emphasize Static
+## Design Patterns
+* It is a `solution` to a commonly occurs **problem**, and it is like a `template` to lot of problems and these patterns are proved and well tested.
+* Design Patterns approach is completely based upon `Solid Principles`.
+    - Creational DP
+    - Structural DP
+    - Behavioral DP
