@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactoryClient", "SimpleFactoryClient.csproj", "{724299DE-C92D-41F5-92A5-426905626F82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleFactoryDSP", "..\FactoryDSP\SimpleFactoryDSP.csproj", "{E11D1B88-7778-45C5-AFCB-6673E00D9292}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{724299DE-C92D-41F5-92A5-426905626F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724299DE-C92D-41F5-92A5-426905626F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724299DE-C92D-41F5-92A5-426905626F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724299DE-C92D-41F5-92A5-426905626F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11D1B88-7778-45C5-AFCB-6673E00D9292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11D1B88-7778-45C5-AFCB-6673E00D9292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11D1B88-7778-45C5-AFCB-6673E00D9292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11D1B88-7778-45C5-AFCB-6673E00D9292}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4990859-5747-4D42-AE6A-4792E4CCE911}
+	EndGlobalSection
+EndGlobal
