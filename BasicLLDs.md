@@ -95,3 +95,14 @@
     - Creational DP
     - Structural DP
     - Behavioral DP
+### Simple Factory DSP
+![Simple Factory DSP](https://github.com/rkishore1207/LLD-HLD/assets/146698138/ed7bdb41-9e65-4df4-88b3-bde7a44f69c2)
+
+* Creation of similar type objects taken place in the `Factory`.
+* `Client` is nothing but, those who use the (utilize) the Factory and get the object.
+* Hence client does not **depend on the low level**, by the *interface (abstraction)* it can get the necessary object from the factory.
+
+### Factory Method
+* Why we go for factory method is, simple factory violating the `open closed` solid principle.
+* Because, if new object is need to create then we have the **modify the factory**, for to add new case condition.
+* So, in Factory Method we created separate factory class for each object and implements the `IFactory` interface.
