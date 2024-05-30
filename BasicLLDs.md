@@ -106,3 +106,11 @@
 * Why we go for factory method is, simple factory violating the `open closed` solid principle.
 * Because, if new object is need to create then we have the **modify the factory**, for to add new case condition.
 * So, in Factory Method we created separate factory class for each object and implements the `IFactory` interface.
+
+### Prototype Pattern
+* There are two prototype patterns, Shallow and Deep clone.
+* To create the same instance of original object into copy, for that purpose we are using clone, here client doesn't know how that clonning process is happening.
+* At `Shallow Clone`, we are clonning the object and create two different references, but if we change the parent class in one of the object, it will change on all the objects.
+![Shallow Clone](https://github.com/rkishore1207/LLD-HLD/assets/146698138/f46a3608-0ea6-4172-9a77-c495e2e05249)
+
+* `Deep shallow` is overcome that problem, that is it will clone all the parent class as well at the **child clonned object**.
