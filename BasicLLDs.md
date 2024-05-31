@@ -114,3 +114,10 @@
 ![Shallow Clone](https://github.com/rkishore1207/LLD-HLD/assets/146698138/f46a3608-0ea6-4172-9a77-c495e2e05249)
 
 * `Deep shallow` is overcome that problem, that is it will clone all the parent class as well at the **child clonned object**.
+
+### Singleton Pattern
+* Create only one object for entire process, eg, find tab in visual studio, which is common for all tabs.
+* There are two cases => Lazy initialization and early initialization.
+* There is one scenario, it will going to create **multiple object**, that is while `multithreaded` case it may create lot of objects.
+* Hence for that case, we could use `Locker`. This is called **Lazy initialization**. `(Doubly Checked Locking)`
+* Where as normal case is **Early initialization**, that is not care about *multi threading*.
