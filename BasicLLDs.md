@@ -121,3 +121,11 @@
 * There is one scenario, it will going to create **multiple object**, that is while `multithreaded` case it may create lot of objects.
 * Hence for that case, we could use `Locker`. This is called **Lazy initialization**. `(Doubly Checked Locking)`
 * Where as normal case is **Early initialization**, that is not care about *multi threading*.
+
+### Command Design Pattern
+* It can converts **requests** or simple patterns into `objects`.
+    1. Command Interface -> abstract method `execute()`.
+    2. Concrete commands that inherit the interface.
+        1. It will create binding between **action and receiver**
+    3. *Receiver* -> Performing the operation.
+    4. *Invoker* -> Asking command to carry on the request.
