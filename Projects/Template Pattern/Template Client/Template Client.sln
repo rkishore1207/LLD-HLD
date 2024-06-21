@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template Client", "Template Client.csproj", "{0CF74E3A-6177-4972-AD5C-3DE859505786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template Design Pattern", "..\Template Design Pattern\Template Design Pattern.csproj", "{98C222E7-AEEB-4162-B4DD-CCEF8E90599D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CF74E3A-6177-4972-AD5C-3DE859505786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF74E3A-6177-4972-AD5C-3DE859505786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF74E3A-6177-4972-AD5C-3DE859505786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF74E3A-6177-4972-AD5C-3DE859505786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C222E7-AEEB-4162-B4DD-CCEF8E90599D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C222E7-AEEB-4162-B4DD-CCEF8E90599D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C222E7-AEEB-4162-B4DD-CCEF8E90599D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C222E7-AEEB-4162-B4DD-CCEF8E90599D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C6E59CB-F1E9-4DCC-B125-A2D3A21087CE}
+	EndGlobalSection
+EndGlobal
