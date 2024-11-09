@@ -36,3 +36,7 @@
     Console.WriteLine(count);
 ```
 
+### Cast and OfType Operator
+
+![Linq Casting](https://github.com/user-attachments/assets/76802a4d-53bd-4a25-b264-53023ef0558c)
+
