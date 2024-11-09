@@ -40,3 +40,5 @@
 
 ![Linq Casting](https://github.com/user-attachments/assets/76802a4d-53bd-4a25-b264-53023ef0558c)
 
+### AsEnumerable()
+* If we are writing any LINQ in the api and let that execute on Server, then If we use AsEnumerable() then the part before the AsEnumerable() will execute on the server side and after the commands will execute in the api side itself.
