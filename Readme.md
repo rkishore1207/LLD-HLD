@@ -64,3 +64,21 @@ foreach (var student in students)
     Console.WriteLine("\n");
 }
 ```
+
+## Element Operators
+
+### First() and FirstOrDefault()
+* First() will return the first element from the list, if there is no element in the list then it will throw an exception.
+* FirstOrDefault() it is as same as the First(), but if there is no element in the list then it will return the Default value for the specified type.
+
+### Single() and SingleOrDefault()
+* Single() will return the single element from the list, if the list is having only one element. If the list doesn't have any element or doesn't match the specified condition, it will throw an exception.
+* SingleOrDefault() same as the Single(), but won't throw an exception if there is no element in the list, but if the specified condition is match with more than one element then it would also throw an exception.
+
+So, FirstOrDefault() return the first matched element even though if the list contains more matched elements, whereas SingleOrDefault() return the Single element only one element is match the condition, but will throw exception if multiple elements match the condition.
+
+### ElementAt and ElementAtOrDefault()
+* Will return the Element at the specified index, and return default if there is no matched element.
+
+### DefaultIfEmpty()
+* If the list doesn't have any elements, then it will return the defualt value as enumerable, we could able to specify the defualt value by ourself, if there is no element in the list.
