@@ -19,7 +19,7 @@
     1. Deferred Execution - Does not execute on the defined place, it will execute on the iteratable of the result place.
     2. Immediate Execution - It will execute where exactly that LINQ defined.
 
-```SQL
+```C#
     //Deferred Execution
     List<string> countries = new List<string>() { "India", "USA", "Germany", "UK", "Italy", "America"};
     IEnumerable<string> strings = countries.Where(country => country.Length > 2);
@@ -42,3 +42,25 @@
 
 ### AsEnumerable()
 * If we are writing any LINQ in the api and let that execute on Server, then If we use AsEnumerable() then the part before the AsEnumerable() will execute on the server side and after the commands will execute in the api side itself.
+
+### Group By
+```C#
+// Group By
+var students = new Student().GetAllStudents().GroupBy(student => student.Country).
+                            Select(x => 
+                                        new { 
+                                                StudentKey = x.Key, 
+                                                Students = x.OrderBy(z => z.Name)
+                                            }).OrderBy(y => y.StudentKey ).ToList();
+
+foreach (var student in students)
+{
+    Console.WriteLine(student.StudentKey + "\t" + student.Students.Count());
+    Console.WriteLine("---------------");
+    foreach (var item in student.Students)
+    {
+        Console.WriteLine("{0} - {1}", item.Name, item.Country);
+    }
+    Console.WriteLine("\n");
+}
+```
