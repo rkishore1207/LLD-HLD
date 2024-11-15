@@ -32,6 +32,24 @@ namespace GroupJoin
             {
                 Console.WriteLine(student.StudentwithCourse + " - " + student.CoursewithStudent);
             }
+
+            // Left Outer Join
+            Console.WriteLine("\n" + "Left Outer Join");
+            var studentsLeftJoin = new Student().GetAllStudents()
+                .GroupJoin(new Course().GetAllCourses(), student => student.StudentId, course => course.StudentId, (student, courses) => new
+                {
+                    stu = student.Name,
+                    course = courses
+                })
+                .SelectMany(result => result.course.DefaultIfEmpty(), (student, course) => new
+                {
+                    StudentName = student.stu,
+                    CourseName = course?.CourseName ?? "No Course"
+                }).ToList();
+            foreach (var student in studentsLeftJoin)
+            {
+                Console.WriteLine($"{student.StudentName} - {student.CourseName}");
+            }
         }
     }
 }
