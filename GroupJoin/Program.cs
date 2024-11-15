@@ -4,6 +4,7 @@ namespace GroupJoin
     {
         static void Main(string[] args)
         {
+            // Group Join - Hierarchial Result Set
             var studentsWithCourses = new Student().GetAllStudents()
                 .GroupJoin(new Course().GetAllCourses(), s => s.StudentId, c => c.StudentId, (student, courses) => new
                 {
@@ -18,6 +19,18 @@ namespace GroupJoin
                     Console.WriteLine(" " + course.CourseName);
                 }
                 Console.WriteLine();
+            }
+
+            // Inner Join - Flat Result Set
+            var students = new Student().GetAllStudents()
+                .Join(new Course().GetAllCourses(), student => student.StudentId, course => course.StudentId, (student, course) => new
+                {
+                    StudentwithCourse = student.Name,
+                    CoursewithStudent = course.CourseName,
+                });
+            foreach (var student in students)
+            {
+                Console.WriteLine(student.StudentwithCourse + " - " + student.CoursewithStudent);
             }
         }
     }
