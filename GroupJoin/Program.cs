@@ -50,6 +50,33 @@ namespace GroupJoin
             {
                 Console.WriteLine($"{student.StudentName} - {student.CourseName}");
             }
+            
+            // Cross Join
+            Console.WriteLine("\n" + "Cross Join");
+            var studentsCrossJoin = new Student().GetAllStudents()
+                .SelectMany(student => new Course().GetAllCourses(), (student, course) => new
+                {
+                    StudentName = student.Name,
+                    CourseName = course.CourseName
+                });
+            foreach (var student in studentsCrossJoin)
+            {
+                Console.WriteLine(student.StudentName + " - " +  student.CourseName);
+            }
+
+            // Cross Join Alternative
+            Console.WriteLine("\n" + "Cross Join Alternative");
+            var studentsCrossJoinAlternative = new Student().GetAllStudents()
+                .Join(new Course().GetAllCourses(), student => true, course => true, (student, course) => new
+                {
+                    StudentName = student.Name,
+                    course.CourseName
+                });
+            foreach (var student in studentsCrossJoinAlternative)
+            {
+                Console.WriteLine(student.StudentName + " - " + student.CourseName);
+            }
+
         }
     }
 }
