@@ -114,3 +114,8 @@ foreach (var item in result1)
     Console.WriteLine(item);
 }
 ```
+
+### SequenceEqual()
+* Will check whether the two sequence are equal or not and return boolean, it is case sensitive and if the order is changed then it will return false.
+* For Case Sensitive problem, we could use overloaded method by including StringComparer.OrdinalIgnoreCase and for order problem, we could OrderBy the both sequence into ascending order.
+* For Reference type we have to follow the same technique as in the Distinct().
