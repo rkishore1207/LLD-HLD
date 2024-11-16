@@ -96,3 +96,21 @@ So, FirstOrDefault() return the first matched element even though if the list co
 
 ### Except()
 * It will return the elements from the 1st array but only the elements which are not present in the 2nd list.
+
+```C#
+// Range, Repeat, Empty Operators
+// Range
+var result = Enumerable.Range(1, 20).Where(x => x % 2 == 0);
+foreach (var item in result)
+{
+    Console.WriteLine(item);
+}
+
+//Empty
+Console.WriteLine("\n" + "Empty");
+var result1 = null ?? Enumerable.Empty<int>();
+foreach (var item in result1)
+{
+    Console.WriteLine(item);
+}
+```
