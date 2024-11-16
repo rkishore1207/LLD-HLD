@@ -82,3 +82,17 @@ So, FirstOrDefault() return the first matched element even though if the list co
 
 ### DefaultIfEmpty()
 * If the list doesn't have any elements, then it will return the defualt value as enumerable, we could able to specify the defualt value by ourself, if there is no element in the list.
+
+## Set Operators
+
+### Distinct()
+* If the comparison is happening between reference types, then Distinct() method doesn't work, because it will compare the references, every objects having different references.
+* So, we could override the inbuilt equals method and GetHashCode() method in all the classes (because it is inheriting the object class).
+* Another way is Select the list by making it anonymous object with whatever property we want to include to compare between them.
+
+### Union()
+* It will return the entire elements of the list which will include under the Union().
+* But only the unique elements it will return, but for the reference types, the same scenario as Distinct() will happen here.
+
+### Except()
+* It will return the elements from the 1st array but only the elements which are not present in the 2nd list.
